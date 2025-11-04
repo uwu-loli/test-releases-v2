@@ -20,5 +20,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_RELEASE_WEBHOOK }}
           OPENAI_API_KEY: ${{ secrets.AI_API_KEY }}
-          OPENAI_API_MODEL: deepseek-ai/deepseek-r1
-          OPENAI_API_BASE_URL: https://integrate.api.nvidia.com/v1/
+          OPENAI_API_MODEL: fast
+          OPENAI_API_BASE_URL: ${{ secrets.AI_API_BASE }} 
