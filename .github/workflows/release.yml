@@ -19,6 +19,9 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_RELEASE_WEBHOOK }}
-          OPENAI_API_KEY: ${{ secrets.AI_API_KEY }}
-          OPENAI_API_MODEL: fast
-          OPENAI_API_BASE_URL: ${{ secrets.AI_API_BASE }} 
+          #OPENAI_API_KEY: ${{ secrets.AI_API_KEY }}
+          #OPENAI_API_MODEL: fast
+          #OPENAI_API_BASE_URL: ${{ secrets.AI_API_BASE }} 
+          OPENAI_API_BASE_URL: https://generativelanguage.googleapis.com/v1beta/openai
+          OPENAI_API_MODEL: gemini-2.5-flash
+          OPENAI_API_KEY: ${{ secrets.AI_GEMINI_API_KEY }}
