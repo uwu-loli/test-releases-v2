@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0
           
       - name: Auto Release
-        uses: zxcnoname666/release-helper@master
+        uses: zxcnoname666/release-helper@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_RELEASE_WEBHOOK }}
